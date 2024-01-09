@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Spotify - Web Player: Music for everyone'</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="https://kit.fontawesome.com/9f72b6226b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+        <div class="left">
+            <div class="home bg-gray rounded p1  ">
+                <img  class=" menu close invert" src="./assets/images/close.svg" alt="">
+                <div class="logo flex align-item"><img class="invert" src="./assets/images/logo.svg" alt="Spotify">
+                    Spotify</div>
+
+                <ul>
+                    <li><img class="invert" src="./assets//images/house-solid.svg" alt="home">Home</li>
+                    <li><img class="invert" src="./assets//images/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library rounded bg-gray">
+                <div class="heading">
+                    <img class="invert" src="./assets/images/lib.svg" alt="Library">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-gray m1 rounded">
+            <div class="heading flex ">
+                <div class="nav">
+                    <img  class="invert hambur" src="./assets/images/bars-solid.svg" alt="">
+                    <img  class="invert p" src="./assets/images/left.svg" alt="left">
+                    <img class="invert n" src="./assets/images/right.svg" alt="left">
+                </div>
+                <div class="button">
+                    <a href="#" class="sign">Sign up</a>
+                    <a href="#" class="log">Log In</a>
+                </div>
+            </div>
+            <div class="spotify-playlist bg-gray">
+                <h1>Spotify Playlist</h1>
+                <div class="card-container ">
+                    <div class="card">
+                        <div class="play">
+                            <img src="./assets/images/PLBB.svg" alt="">
+                            <!--   -->
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000024c4ae64d4ed1fa93a1b886ca" alt="Song">
+                        <h3>Today's Top Hits</h3>
+                        <p>Taylor Swift is on top of the Hottest 50!</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="./assets/images/PLBB.svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002ec94bf1083be30463d4b731d " alt="Song">
+                        <h3>Chillhop</h3>
+                        <p>Blissed out beats and head nodding grooves - Relax, study and vibe.</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="./assets/images/PLBB.svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002bdeb1c317ac2dd10f2397e4c " alt="Song">
+                        <h3>Jaxx in the Background</h3>
+                        <p>Soft instrumental Jazz for all your activities.</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="./assets/images/PLBB.svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d8fe1c03afc22a01d5109233 " alt="Song">
+                        <h3>Calming Acoustic</h3>
+                        <p>Keep calm with instrumental acoustic tracks.</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="./assets/images/PLBB.svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000021c9bfca9b2fd2f546a30f751 " alt="Song">
+                        <h3>Big on the internet</h3>
+                        <h3>Lofi Beats</h3>
+                        <p>chill beats, lofi vibes, new tracks every week...</p>
+                    </div>
+
+                </div>
+                <div class="playbar">
+                    <div class="seekBar">
+                        <div class="circle" >
+
+                        </div>
+                    </div>
+                    <div class="above">
+
+                        <div  id="sInfo" class="songInfo">
+    
+                        </div>
+                        <div class="songButton flex justify-content">
+                            <img id="prev" class="invert" src="./assets/images/backward-step-solid.svg" alt="Previous">
+                            <img  id="play" class="invert" id="playS" src="./assets/images/circle-play-regular.svg" alt="play">
+                            <img id="next" class="invert" src="./assets/images/forward-solid.svg" alt="next">
+                        </div>
+                        <div id="sTime" class="songTime">
+
+                        </div>
+                        <div class="vol">
+                            <img class="invert" src="./assets//images//volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
